@@ -121,23 +121,23 @@ users:
 ```
 ./terraform apply
  ```
-ФОТО ИПШНИКОВ
+![alt text](https://github.com/Daark46/-Diploma1/blob/main/Png/png%200.5.png)
 
 Проверка результата в Yandex Cloud:
 
 1. Одна сеть bastion-network
 2. Две подсети bastion-internal-segment и bastion-external-segment
 3. Балансировщик alb-lb с роутером web-servers-router
-ФОТО
+![alt text](https://github.com/Daark46/-Diploma1/blob/main/Png/png%202.png)
 
 6 виртуальных машин
-ФОТО
+![alt text](https://github.com/Daark46/-Diploma1/blob/main/Png/png%202.png)
 
 6 групп безопасности
-ФОТО 
+![alt text](https://github.com/Daark46/-Diploma1/blob/main/Png/png%203.png) 
 
 Ежедневные снимки дисков по расписанию
-ФОТО
+![alt text](https://github.com/Daark46/-Diploma1/blob/main/Png/png%205.png)
 
 
 # Ansible
@@ -148,11 +148,11 @@ users:
 
 файл конфигурации
 
-ФОТО
+![alt text](https://github.com/Daark46/-Diploma1/blob/main/Png/png%206.png)
 
 создаем файл hosts.ini c использованием FQDN имен серверов вместо ip
 
-ФОТО
+![alt text](https://github.com/Daark46/-Diploma1/blob/main/Png/png%207.png)
 
 проверяем доступность ВМ используя модуль ping
 

@@ -84,7 +84,6 @@ provider_installation {
  ```
 8. В папке, в которой будет запускаться Terraform, создаем файл main.tf с следующим содежанием
 ```
-# Описание облака
 terraform {
   required_providers {
     yandex = {
@@ -96,8 +95,22 @@ terraform {
 
 # Описание доступа и токена
 provider "yandex" {
-  token = "товен"
+  token = "токен"
   cloud_id  = "id облака"
   folder_id = "id папки"
 }
+ ```
+9. Создать файл meta.yaml
+```
+users:
+  - name: user
+    groups: sudo
+    shell: /bin/bash
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    ssh-authorized-keys:
+      - ssh-rsa ***
+ ```
+10. Инициализация Terraform
+```
+./terraform init
  ```

@@ -70,3 +70,34 @@ chmod 766 terraform
 nano ~/.terraformrc
 chmod 644 .terraformrc
  ```
+7. Вносим данные, указанные в документации
+```
+provider_installation {
+  network_mirror {
+    url = "https://terraform-mirror.yandexcloud.net/"
+    include = ["registry.terraform.io/*/*"]
+  }
+  direct {
+    exclude = ["registry.terraform.io/*/*"]
+  }
+}
+ ```
+8. В папке, в которой будет запускаться Terraform, создаем файл main.tf с следующим содежанием
+```
+# Описание облака
+terraform {
+  required_providers {
+    yandex = {
+      source = "yandex-cloud/yandex"
+    }
+  }
+  required_version = ">= 0.13"
+}
+
+# Описание доступа и токена
+provider "yandex" {
+  token = "товен"
+  cloud_id  = "id облака"
+  folder_id = "id папки"
+}
+ ```

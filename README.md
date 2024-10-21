@@ -5,6 +5,7 @@
 Ключевая задача — разработать отказоустойчивую инфраструктуру для сайта, включающую мониторинг, сбор логов и резервное копирование основных данных. Инфраструктура должна размещаться в Yandex Cloud и отвечать минимальным стандартам безопасности: запрещается выкладывать токен от облака в git.
 
 ### Инфраструктура
+
 Для развёртки инфраструктуры используйте Terraform и Ansible.
 
 Не используйте для ansible inventory ip-адреса! Вместо этого используйте fqdn имена виртуальных машин в зоне ".ru-central1.internal". Пример: example.ru-central1.internal - для этого достаточно при создании ВМ указать name=example, hostname=examle !!
@@ -167,12 +168,15 @@ users:
 ставим nginx
 
 запускаем playbook установки Nginx с созданием web страницы
+
 ![alt text](https://github.com/Daark46/-Diploma1/blob/main/Png/png%208.png)
 
 проверяем доступность сайта в браузере по публичному ip адресу Load Balancer
+
 ![alt text](https://github.com/Daark46/-Diploma1/blob/main/Png/png%209.png)
 
-делаем запрос curl -v ...
+делаем запрос curl -v 
+
 ![alt text](https://github.com/Daark46/-Diploma1/blob/main/Png/png%2010.png)
 
 # Мониторинг

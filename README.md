@@ -93,7 +93,6 @@ terraform {
   required_version = ">= 0.13"
 }
 
-# Описание доступа и токена
 provider "yandex" {
   token = "токен"
   cloud_id  = "id облака"
@@ -114,3 +113,37 @@ users:
 ```
 ./terraform init
  ```
+
+# Развёртка Terraform
+Подготовка .tf конфигов, после начинаем развертку из папки Terraform.
+
+Запуск развертки
+```
+./terraform apply
+ ```
+ФОТО ИПШНИКОВ
+
+Проверка результата в Yandex Cloud:
+
+1. Одна сеть bastion-network
+2. Две подсети bastion-internal-segment и bastion-external-segment
+3. Балансировщик alb-lb с роутером web-servers-router, целевой группой tg-web
+ФОТО
+
+6 виртуальных машин
+ФОТО
+
+6 групп безопасности
+ФОТО 
+
+Ежедневные снимки дисков по расписанию
+ФОТО
+
+
+# Ansible
+
+Установка и настройка ansible
+
+устанавливаем ansible на локальном хосте где работали с terraform и настраиваем его на работу через bastion
+
+файл конфигурации

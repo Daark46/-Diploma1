@@ -226,3 +226,7 @@ users:
 
 Проверяем в Kibana что Filebeat доставляет логи в Elasticsearch
 ![alt text](https://github.com/Daark46/-Diploma1/blob/main/Png/png%2022.png)
+
+# Балансировщик
+http://84.252.132.245/
+

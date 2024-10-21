@@ -227,6 +227,6 @@ users:
 Проверяем в Kibana что Filebeat доставляет логи в Elasticsearch
 ![alt text](https://github.com/Daark46/-Diploma1/blob/main/Png/png%2022.png)
 
-# Балансировщик
-http://84.252.132.245/
-
+# Балансировщик [Балансировщик](http://84.252.132.245/)
+# Zabbix [Логин: Almin Пароль: zabbix](http://89.169.163.91/zabbix/zabbix.php?action=dashboard.list)
+# Kibana [Kibana](http://158.160.8.239:5601/app/home#/)

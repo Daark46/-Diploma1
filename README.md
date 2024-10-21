@@ -128,15 +128,19 @@ users:
 1. Одна сеть bastion-network
 2. Две подсети bastion-internal-segment и bastion-external-segment
 3. Балансировщик alb-lb с роутером web-servers-router
+
 ![alt text](https://github.com/Daark46/-Diploma1/blob/main/Png/png%202.png)
 
 6 виртуальных машин
+
 ![alt text](https://github.com/Daark46/-Diploma1/blob/main/Png/png%202.png)
 
 6 групп безопасности
+
 ![alt text](https://github.com/Daark46/-Diploma1/blob/main/Png/png%203.png) 
 
 Ежедневные снимки дисков по расписанию
+
 ![alt text](https://github.com/Daark46/-Diploma1/blob/main/Png/png%205.png)
 
 
@@ -156,51 +160,65 @@ users:
 
 проверяем доступность ВМ используя модуль ping
 
-ФОТО
+![alt text](https://github.com/Daark46/-Diploma1/blob/main/Png/пинг.png)
 
 # Установка NGINX и загрузка сайта
 
 ставим nginx
 
 запускаем playbook установки Nginx с созданием web страницы
-ФОТО
+![alt text](https://github.com/Daark46/-Diploma1/blob/main/Png/png%208.png)
 
 проверяем доступность сайта в браузере по публичному ip адресу Load Balancer
-ФОТО
+![alt text](https://github.com/Daark46/-Diploma1/blob/main/Png/png%209.png)
 
 делаем запрос curl -v ...
-ФОТО
+![alt text](https://github.com/Daark46/-Diploma1/blob/main/Png/png%2010.png)
 
 # Мониторинг
 
 установка Zabbix сервера
-ФОТО
+
+![alt text](https://github.com/Daark46/-Diploma1/blob/main/Png/png11.png)
 
 Проверка доступности frontend zabbix сервера
-ФОТО
+
+![alt text](https://github.com/Daark46/-Diploma1/blob/main/Png/png%2012.png)
 
 установка Zabbix агентов на web сервера
-ФОТО
+
+![alt text](https://github.com/Daark46/-Diploma1/blob/main/Png/png%2013.png)
 
 Добавляем хосты используя FQDN имена в zabbix сервер и настраиваем дашборды
-ФОТО
-ФОТО
-ФОТО
+
+![alt text](https://github.com/Daark46/-Diploma1/blob/main/Png/png%2014.png)
+
+![alt text](https://github.com/Daark46/-Diploma1/blob/main/Png/png%2015.png)
+
+![alt text](https://github.com/Daark46/-Diploma1/blob/main/Png/png%2016.png)
+
+![alt text](https://github.com/Daark46/-Diploma1/blob/main/Png/png%2017.png)
 
 # Установка стека ELK для сбора логов
+
 Установка Elasticsearch
-ФОТО
+
+![alt text](https://github.com/Daark46/-Diploma1/blob/main/Png/png%2018.png)
 
 # Установка Kibana
-ФОТО
+
+![alt text](https://github.com/Daark46/-Diploma1/blob/main/Png/png%2019.png)
 
 проверяем что Kibana работает
-ФОТО
+
+![alt text](https://github.com/Daark46/-Diploma1/blob/main/Png/png%2020.png)
 
 
 # Установка Filebeat
+
 Устанавливаем Filebeat на web сервера
-ФОТО
+
+![alt text](https://github.com/Daark46/-Diploma1/blob/main/Png/png%2021.png)
 
 Проверяем в Kibana что Filebeat доставляет логи в Elasticsearch
-ФОТО
+![alt text](https://github.com/Daark46/-Diploma1/blob/main/Png/png%2022.png)

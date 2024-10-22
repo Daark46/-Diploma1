@@ -229,4 +229,4 @@ users:
 
 # Балансировщик [Балансировщик](http://84.252.132.245/)
 # Zabbix [Логин: Almin Пароль: zabbix](http://158.160.81.219/zabbix/)
-# Kibana [Kibana](http://158.160.8.239:5601/app/home#/)
+# Kibana [Kibana](http://158.160.66.160:5601/app/home#/)
